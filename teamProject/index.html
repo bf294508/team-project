@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Trivia Game</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="test.js"></script>
+   
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+   $(document).ready(function () {
+       $("#row2,#row3,#row4,#row5").hover(function () {
+           $(this).css("background-color", "yellow");
+       }, function () {
+           $(this).css("background-color", "");
+       });
+   });
+</script>
+<body>
+   <div class="jumbotron jumbotron-fluid">
+       <div class="container">
+           <h1 class="display-4">New York Times Search </h1>
+       </div>
+   </div>
+   <section id="mainBody">
+       <div class="card">
+           <div class="row">
+           </div>
+           <nav class="navbar navbar-light bg-light justify-content-between">
+               <a class="navbar-brand">Search Parameters</a>
+               <form class="form-inline">
+                   <input class="form-control mr-sm-2" type="search" placeholder="Search Term" aria-label="Search">
+                   <input class="form-control mr-sm-3" type="search" placeholder="Number of Records to Retrieve" aria-label="Search">
+                   <input class="form-control mr-sm-4" type="search" placeholder="Start Year" aria-label="Search">
+                   <input class="form-control mr-sm-5" type="search" placeholder="End Year (Option)" aria-label="Search">
+                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+               </form>
+           </nav>
+           <div id="top-articles"> </div>
+       </div>
+       <div></div>
+   </section>
+   <!--main body-->
+</body>
+</html>
